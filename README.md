@@ -2,7 +2,7 @@
 Application of various regression algorithms to understand key drivers of used car data price predictions. 
 
 # Data-Driven Insights into Used Car Sales 
-**Jupyter Notebook with code, experimentation, further insights, and deployment strategies: [here]().**
+**Jupyter Notebook with code, experimentation, further insights, and deployment strategies: https://github.com/Subroy1/UsedCarPrice_DataAnalysis_For_prediction/blob/main/PracticalAssignement2_used_cars_II.ipynb**
 
 ## Business Goal
 
