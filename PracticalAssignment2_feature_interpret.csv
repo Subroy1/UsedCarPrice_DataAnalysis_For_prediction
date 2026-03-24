@@ -1,0 +1,22 @@
+,,,
+Feature,Coefficient Value,Impact,Interpretation
+manufacturer_datsun,0.79214,Strong positive,This looks like an anomaly or a rare / old brand . 
+manufacturer_ferrari,0.777547,Strong positive,"Keeping all other features unchanged, ferari makes would make the car 
+117% more expensive (np.exp(0.777547)-1 *100). 
+"
+frequency_transformer__model,0.455596,Strong positive,"np.exp(0.455480) = 1.577-1 = 0.577
+This corresponds to approximately a 57.69% increase in price for every one unit 
+increase in the target-encoded model value."
+anufacturer_aston-martin,0.373528,Strong positive,Luxury brand 
+condition_new,0.297147,Significant Positive,Well maintained in good condition depreceates slowly 
+cylinders_12,0.294719,Significant Positive,Powerful engine would cause price to be higher than reference (10 cylinders)
+manufacturer_porsche,0.231962,Positive,Luxury brand 
+numeric_transformer__age,-0.224114,Negative,"approx 22% decrease for each year old , age of car is significant by 
+general sense while pricing as it depreceates quickly ."
+fuel_gas,-0.244229,Negative,"Quite negative compared to reference category diesel, due to running 
+costs and higher mileage offered , in US cars make long journeys on runways . "
+fuel_hybrid,-0.26811,Negative,"Not yet hit the market , purchasers prefer gasoline and diesel cars . "
+fuel_electric,-0.321834,Significant Negative,EVs not yet popular due to logistics or charging  points limitations maybe 
+condition_salvage,-0.739308,Strong negative,Poor condition degrades the price
+condition_fair,-0.870618,Strong negative,"Keeping all features unchanged, condition fair would reduce the car price by 
+58%(np.exp(-0.870618)-1) relative to reference condition ""excellent"""
