@@ -16,18 +16,27 @@ We dropped five features which have little role to play in model building and ar
 
 
 ## Modeling and performance
-TODO
+Models Utilized: Baseline Linear Regression, Ridge , Lasso  and Elastic Net were employed to predict used car prices.
+Data Preparation: Features underwent preprocessing including imputation, one-hot encoding for categorical variables, and frequency encoding for high-cardinality features like model.
+Hyperparameter Tuning: GridSearchCV was applied to Ridge, Lasso, and Elastic Net models to optimize their regularization parameters, although default Ridge performed best .
+Best Model: Ridge Regression (with alpha=1 or alpha=0.1) demonstrated the best performance among the tested models with negligible differences
+Performance Metrics: The best model achieved an R2 score of approximately 0.65, indicating it explains about 65% of the variance in car prices, with a Root Mean Squared Error (RMSE) of around $8,300 on actual predicted prices.
 
 ## Conclusions
-
 The model revealed that there’s a significant relationship between certain features and the target variable 
-#### Interesting Findings
 
-| Feature                                 | Recommendation                                                                                     | Coefficient Value | Impact               | Interpretation                                                                                  
+#### Interesting Findings
+Certain manufacturers like 'datsun' and 'ferrari' show exceptional premium, possibly due to rarity or luxury status.
+The car's model is second most important feature .
+Car condition plays a crucial role; condition_new and cylinders_12
+Depreciating Factors: Age (numeric_transformer__age) and odometer readings are consistent depreciators
+Fuel Type Influence: Different fuel types exhibit varying negative impacts relative to the reference diesel, indicating a preference for diesel or other unlisted fuel types in the market represented by the dataset.
 
 ### Actionable insights
-List down observations about factors that drive the car values up 
-List down recommendations 
-List down certain limitations and future suggestions . 
+Condition is Key: Dealers should prioritize acquiring and maintaining cars in good to excellent condition, as poor conditions severely degrade value.
+Inventory Strategy: Focus on stockpiling inventory for specific manufacturers and models that align with market demand
+Age and Mileage Management: Factor in depreciation due to age and high odometer readings when considering trade-ins or sourcing vehicles
+Local Market Awareness: Recognize that state-specific pricing trends are significant
+Minor Feature Impacts:  fuel type, number of cylinders, transmission, drive type, and paint color 
 
 
