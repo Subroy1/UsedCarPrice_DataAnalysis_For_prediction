@@ -14,7 +14,7 @@ Finally a summary report would be provided to the intended audience namely used 
 
 We dropped five features which have little role to play in model building and are redundant [size, type , region, VIN, id]. In addition , I decided to transform some features into new ones for normalizing the data . The target variable price is also log transformed to cater for large values causing massive imbalance across different car makes and models . 
 
-<img width="859" height="547" alt="image" src="https://github.com/user-attachments/assets/4aa59a47-90ae-40cd-b1d4-da2eccb1ce97" />
+<img width="868" height="547" alt="image" src="https://github.com/user-attachments/assets/912b4c91-6b06-4d12-910a-e4a2967ee2aa" />
 
 
 ## Modeling and performance
